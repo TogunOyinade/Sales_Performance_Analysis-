@@ -25,7 +25,7 @@ The Primary source of Data used is Sales Performance Analysis for a Retail Store
 
 
 ## Tools Used
-- **Microsoft Excel**: [See Here]( Sales_Performance_Analysis.csv)
+- **Microsoft Excel**: [See Here](https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Performance_Analysis.csv)
   Used for
 
 a. Checked for Duplicates
@@ -149,10 +149,6 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 ### DATA VISUALIZATION
 ---
 [Sales_Analysis_Pivot.csv]
-
-
-
-[Sales_Performance_Visualization.pdf]
 
 ![https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png]
 
