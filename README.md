@@ -152,7 +152,7 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 [Sales_Performance_Visualization.pdf]
 
-Screenshot 2024-11-05 103410.png
+![https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png]
 
 
 
