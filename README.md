@@ -152,6 +152,9 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 [Sales_Performance_Visualization.pdf]
 
+Screenshot 2024-11-05 103410.png
+
+
 
 ## Key Insights
 - **Top-Selling Products**: The top selling product which was shoes generated 29.19% of total revenue, indicating product popularity.
