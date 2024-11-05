@@ -148,8 +148,9 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 ### DATA VISUALIZATION
 ---
-![Sales_Analysis_Pivot.csv]
-![Sales_Performance_Visualization.pdf]
+[Sales_Analysis_Pivot.csv]
+
+[Sales_Performance_Visualization.pdf]
 
 
 ## Key Insights
