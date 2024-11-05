@@ -41,8 +41,8 @@ f. Calculations
 
 g. Data Exploration
 
-- **SQL**: Querying insights from the sales data.
-- **Power BI**: Interactive dashboard creation to visualize findings.
+- **SQL**: Querying insights from the sales data. [See Here] (Sales_Performance_Analysis.sql)
+- **Power BI**: Interactive dashboard creation to visualize findings. [See Here] ( 
 
 ## Project Steps
 1. **Data Preparation**:
