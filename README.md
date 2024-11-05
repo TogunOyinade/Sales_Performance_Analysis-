@@ -42,7 +42,7 @@ f. Calculations
 
 g. Data Exploration
 
-- **SQL**: Querying insights from the sales data. [See Here] (Sales_Performance_Analysis.sql)
+- **SQL**: Querying insights from the sales data. [See Here] (https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Performance_Analysis.sql)
 - **Power BI**: Interactive dashboard creation to visualize findings. [See Here] (Sales_Performance_Visualization.pdf)
 
 ## Project Steps
@@ -149,6 +149,8 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 ### DATA VISUALIZATION
 ---
 [Sales_Analysis_Pivot.csv]
+
+
 
 [Sales_Performance_Visualization.pdf]
 
