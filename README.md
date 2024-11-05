@@ -148,9 +148,10 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 ### DATA VISUALIZATION
 ---
-[Sales_Analysis_Pivot.csv]
+!(https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Analysis_Pivot.csv)
 
-![https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png]
+!(https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png)
+!(https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Performance_Visualization.pdf)
 
 
 
