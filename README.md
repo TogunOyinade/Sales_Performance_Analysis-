@@ -87,63 +87,62 @@ This involved exploring the data to answer some questions such as;
 This is where we used some lines of code or queries;
 
 ```SQL
-SELECT * FROM[dbo].[SalesProjecttt]
+SELECT * [dbo].[Sales_Performance_Analysis];
+
 ----1----retrieve the total sales for each product category-----
-SELECT product, sum(Quantity) as Total_sales
-FROM[dbo].[SalesProjecttt]
+SELECT Product, SUM(UnitPrice * Quantity) AS TotalSales
+FROM [dbo].[Sales_Performance_Analysis]
 GROUP BY Product;
 
 ----2--Find the number of sales transactions in each region----
-SELECT region,
-count(customer_id) as sales_transactions
-FROM[dbo].[SalesProjecttt]
-GROUP BY region
-Order by sales_transactions;
+SELECT Region, COUNT(OrderID) AS Transactions
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Region;
 
 ------3-----find the highest-selling product by total sales value ------
 SELECT Product, sum(Quantity) as highestsellingproduct
-FROM [dbo].[SalesProjecttt]
+FROM [dbo].[Sales_Performance_Analysis]
 GROUP BY Product
-ORDER BY highestsellingproduct DESC
+ORDER BY highestsellingproduct DESC;
 
 ------4----calculate total revenue per product------
 SELECT Product, sum(Quantity) as Total_revenue
-FROM[dbo].[SalesProjecttt]
+FROM [dbo].[Sales_Performance_Analysis]
 GROUP BY Product
 ORDER BY Total_revenue;
 
-SELECT * FROM[dbo].[SalesProjecttt]
 
 ------5----calculate monthly sales totals for the current year------
-SELECT Month(orderdate) as month,
-sum(quantity*unitprice) as monthly_sales
-FROM[dbo].[SalesProjecttt]
-WHERE YEAR(orderdate)=YEAR(GetDate())
-GROUP BY Month(orderdate)
-ORDER BY Month;
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, SUM(Quantity * UnitPrice) AS MonthlySales
+FROM [dbo].[Sales_Performance_Analysis]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY FORMAT(OrderDate, 'yyyy-MM');
+
 
 -----6-------find the top 5 customers by total purchase amount-----
-SELECT TOP 5 Customer_Id,
-SUM(Quantity) as Total_Purchase
-FROM[dbo].[SalesProjecttt]
-GROUP BY Customer_Id
-ORDER BY Total_Purchase;
+SELECT TOP 5 OrderID, SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY OrderID
+ORDER BY TotalPurchase DESC;
+
+
 
 -----7------calculate the percentage of total sales contributed by each region-----
-SELECT Region,
-SUM(Total_sales) as Regionsales, (SUM(Total_sales)/(Select Sum(Total_sales)
-FROM [dbo].[SalesProjecttt]))*100 as Percentage_of_total_sales
-FROM [dbo].[SalesProjecttt]
-GROUP BY region
-ORDER BY Regionsales DESC;
+WITH TotalSales AS (
+    SELECT SUM(Quantity * UnitPrice) AS GrandTotal
+    FROM [dbo].[Sales_Performance_Analysis]
+)
+SELECT Region, SUM(Quantity * UnitPrice) * 100.0 / (SELECT GrandTotal FROM TotalSales) AS RegionSalesPercentage
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Region;
 
-SELECT * FROM[dbo].[SalesProjecttt]
+
 
 -----8----------identify products with no sales in the last quarter.--------
 SELECT product, orderId
-FROM[dbo].[SalesProjecttt]
+FROM FROM [dbo].[Sales_Performance_Analysis]
 WHERE NOT EXISTS(Select 1
-FROM[dbo].[SalesProjecttt]
+FROM FROM [dbo].[Sales_Performance_Analysis]
 WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 ```
 
