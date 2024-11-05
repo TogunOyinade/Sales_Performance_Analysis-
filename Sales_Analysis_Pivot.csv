@@ -1,0 +1,34 @@
+Product,Sum of Quantity,,,Product,Average of Total Sales/Product,Count of Total Sales.,,Regions,Sum of Total Sales,,,,
+Gloves,12369,,,Gloves,200.07,1484,,East,485925,,,,
+Hat,15929,,,Hat,158.81,1991,,North,387000,,,,
+Jacket,5452,,,Jacket,139.94,1488,,South,927820,,,,
+Shirt,12388,,,Shirt,326.56,1487,,West,300345,,,,
+Shoes,14402,,,Shoes,308.70,1987,,Grand Total,2101090,,ITEM WITH HIGHEST SALE,,
+Socks,7921,,,Socks,121.82,1484,,,,,Products,Sum of Total Sales,
+Grand Total,68461,,,Grand Total,211.78,9921,,,,,Shoes,613380.00,
+,,,,,,,,,,,Grand Total,613380.00,
+,,,,,,,,,,,,,
+Months,Sum of Total Sales,,,Products,Average of Total Sales,,,Region,Average of Total Revenue/ Region,,,,
+2023,1105330,,,Gloves,200.07,,,East,485925,,,Months,Sum of Total Sales
+Jan,49600,,,Hat,158.81,,,North,387000,,,Jan,248000
+Feb,247500,,,Jacket,139.94,,,South,927820,,,Feb,546300
+Mar,52395,,,Shirt,326.56,,,West,300345,,,Mar,107175
+Apr,7425,,,Shoes,308.70,,,Grand Total,525314.68,,,Apr,46865
+May,59640,,,Socks,121.82,,,,,,,May,104280
+Jun,99400,,,Grand Total,211.78,,,,,,,Jun,247600
+Jul,237600,,,,,,,TOP 3 PRODUCTS WITH HIGHEST SALES,,,,Jul,274800
+Aug,29880,,,,,,,Product,Sum of Total Sales/Product,Count of Total Sales.,,Aug,204180
+Sep,34720,,,Products,Sum of Total Sales,,,Hat,316195.00,1991,,Sep,34720
+Oct,133920,,,Gloves,296900.00,,,Shirt,485600.00,1487,,Oct,133920
+Nov,103950,,,Hat,316195.00,,,Shoes,613380.00,1987,,Nov,103950
+Dec,49300,,,Jacket,208230.00,,,Grand Total,1415175.00,5465,,Dec,49300
+2024,995760,,,Shirt,485600.00,,,,,,,Grand Total,2101090
+Jan,198400,,,Shoes,613380.00,,,,,,,,
+Feb,298800,,,Socks,180785.00,,,,,,,,
+Mar,54780,,,Grand Total,2101090.00,,,,,,,,
+Apr,39440,,,,,,,,,,,,
+May,44640,,,,,,,,,,,,
+Jun,148200,,,,,,,,,,,,
+Jul,37200,,,,,,,,,,,,
+Aug,174300,,,,,,,,,,,,
+Grand Total,2101090,,,,,,,,,,,,
