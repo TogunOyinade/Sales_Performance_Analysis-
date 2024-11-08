@@ -136,11 +136,11 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 ### DATA VISUALIZATION
 ---
-![Screenshot](https://github.com/TogunOyinade/Customer_Segmentation_for_Subscription_Service_Analysis/blob/main/Screenshot%202024-11-05%20104427.png)
+![Screenshot](https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png)
 
-![Pivot_Table](https://github.com/TogunOyinade/Customer_Segmentation_for_Subscription_Service_Analysis/blob/main/Customer_Analysis_Pivot.csv)
+![Pivot_Table](https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Analysis_Pivot.csv)
 
-![Data_Visual](https://github.com/TogunOyinade/Customer_Segmentation_for_Subscription_Service_Analysis/blob/main/Customer_Performance_Visualization.pdf)
+![Data_Visual](https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Sales_Performance_Visualization.pdf)
 
 
 
@@ -153,30 +153,17 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 
 #Next Steps
-- Certainly! Here are **five next steps** based on the sales analysis:
 
----
+- Investigate why the South region has significantly higher sales compared to other regions. Identify specific factors, such as marketing efforts, customer demographics, or local demand trends, that can be replicated in lower-performing regions.
 
-## Next Steps
-- **Analyze Regional Discrepancies**: Investigate why the South region has significantly higher sales compared to other regions. Identify specific factors, such as marketing efforts, customer demographics, or local demand trends, that can be replicated in lower-performing regions.
+-Since Shoes are the highest-selling product (29.19% of total sales), consider increasing marketing efforts, promotions, or bundling strategies around this product to further boost its sales across all regions.
 
--**Increase Focus on Top-Selling Products**: Since Shoes are the highest-selling product (29.19% of total sales), consider increasing marketing efforts, promotions, or bundling strategies around this product to further boost its sales across all regions.
+- Given that February recorded the highest sales, it may be beneficial to replicate the strategies used during this month, such as targeted promotions, discounts, or special offers, to drive sales in other months.
 
-- **Seasonal Promotions for February**: Given that February recorded the highest sales, it may be beneficial to replicate the strategies used during this month, such as targeted promotions, discounts, or special offers, to drive sales in other months.
+- Provide additional resources and promotional support to regions with lower sales, including localized marketing campaigns, in-store events, or partnerships that can increase customer engagement and sales.
 
-- **Boost Sales in Underperforming Regions**: Provide additional resources and promotional support to regions with lower sales, including localized marketing campaigns, in-store events, or partnerships that can increase customer engagement and sales.
+- Conduct surveys or focus groups in regions with lower sales to gain insights into customer preferences, purchasing barriers, and reasons for not purchasing in higher volumes. This data will help tailor future strategies to increase sales in these areas.
 
-- **Customer Feedback and Satisfaction Surveys**: Conduct surveys or focus groups in regions with lower sales to gain insights into customer preferences, purchasing barriers, and reasons for not purchasing in higher volumes. This data will help tailor future strategies to increase sales in these areas.
-
---- 
-
-These next steps focus on enhancing overall sales performance by analyzing regional performance, leveraging successful products, and refining marketing efforts.
-
-## Next Steps
-- Focus on improving retention strategies for customers at high risk of early cancellation.
-- Target marketing campaigns based on popular regions and subscription types.
-- Consider incentives for long-term subscribers to increase average subscription duration.
-- Survey should be conducted to know why most subscription was canceled. 
 
 THANK YOU.
 
