@@ -1,95 +1,136 @@
-# HR_Data_Attrition
+# Sales_Performance_Analysis
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Data Sources](#data-sources)
-- [Tools Used](#tools-used)
-- [Data Columns](#data-columns)
-- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Data Analysis](#data-analysis)
-- [Data Visualization](#data-visualization)
-- [Key Insights](#key-insights)
-- [Recommendations](#recommendations)
-
+### PROJECT TITLE: SALES-PERFORMANCE-ANALYSIS
 ---
+[PROJECT OVERVIEW](#project-overview)
+
+[DATA SOURCES](#data-sources)
+
+[TOOLS USED](#tools-used)
+
+[PROJECT STEPS](#project-steps)
+
+[DATA CLEANING AND PREPARATION](#data-cleaning-and-preparation)
+
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)
+
+[DATA ANALYSIS](#data-analysis)
+
+[DATA VISUALIZATION](#data-visualization)
+
+[RECOMMENDATION AND CONCLUSION](#recommendation-and-conclusion)
+
 
 ## Project Overview
-In this project, I explored HR attrition data to understand what factors lead to employee turnover, assess job satisfaction, and spot trends in workforce demographics. My goal is to provide HR teams with insights that can help them create a more engaging and supportive work environment.
+The goal of this project is to analyze sales data to uncover insights such as top-selling products, regional performance, and monthly sales trends. This analysis will help in making informed decisions to optimize sales strategies and improve overall performance. The final deliverable is a Power BI dashboard that presents these insights.
 
-## Data Sources
-The data includes a range of HR metrics, covering attrition status, job satisfaction, employee demographics, and job roles.
+### DATA SOURCES
+---
+The primary source of data used is the **Sales Performance Data**, which contains details about products, regions, quantities sold, and sales transactions.
 
 ## Tools Used
-- **Excel**: For data cleaning, preparation, and basic analysis.
-- **Power BI**: To create interactive visualizations and dashboards for in-depth exploration.
+- **Microsoft Excel**: Used for
+  a. Checking for duplicates  
+  b. Removing duplicates (data cleaning)  
+  c. Creating new columns for monthly sales  
+  d. Visualizations and pivot table analysis  
+  e. Calculations for total sales, top-selling products, and regional performance  
+  
+- **SQL**: Used for querying insights on total sales, regional performance, product popularity, and monthly sales trends.
+  
+- **Power BI**: Used to create an interactive dashboard that visualizes sales performance metrics like total sales, regional performance, and top-selling products.
 
-## Data Columns
-- **Attrition**: Whether an employee has left the company.
-- **Business Travel**: Frequency of employee business travel.
-- **CF_age_band**: Age categorized into specific groups for easy analysis.
-- **CF_Attrition Label**: Label indicating attrition status (e.g., "Active" or "Exited").
-- **Department**: Department where the employee works.
-- **Educational Field**: Field of study for the employee.
-- **Employee Number**: Unique ID for each employee.
-- **Gender**: Employee’s gender.
-- **Job Role**: Employee’s job title or position.
-- **Marital Status**: Marital status of the employee.
-- **Overtime**: Whether the employee regularly works overtime.
-- **CF_Current Employee**: Current employment status.
-- **Employee Count**: Total number of employees.
-- **Employee Satisfaction**: Self-reported overall satisfaction score.
-- **Job Satisfaction Rating**: Job-specific satisfaction score.
+## Project Steps
+1. **Data Exploration in Excel**:
+   - Used pivot tables to summarize data and identify sales trends.
+   - Calculated key metrics like total sales per region and the top-selling products.
 
-## Data Cleaning and Preparation
-In Excel, I:
-- **Removed duplicates and empty rows** to keep the data clean.
-- **Standardized categorical data** (like Gender and Department) to maintain consistency.
-- **Calculated new metrics** such as attrition rates per department.
-- **Created additional columns** for clearer analysis, like age bands to categorize employees by age groups.
+2. **SQL Analysis**:
+   - Wrote queries to extract key insights such as total sales by region, monthly sales trends, and top-selling products.
+   - Additional queries to calculate popular product categories and revenue by category.
 
-## Exploratory Data Analysis
-To better understand the dataset, I:
-- Calculated attrition rates by department, age band, and job role.
-- Analyzed satisfaction averages by role and department.
-- Reviewed employee demographics across factors like gender, department, and marital status.
+3. **Power BI Visualization**:
+   - Developed a dashboard that displays sales performance insights, including total sales, regional performance, and top-selling products.
+   - Added slicers for filtering by region, product category, and time period.
 
-## Data Analysis
-Key metrics and calculations include:
-- **Attrition Rate Calculation**: \( \text{Attrition Rate} = \frac{\text{Attrition Count}}{\text{Total Employees}} \times 100 \)
-- **Satisfaction Scores**: Using `AVERAGEIF` functions to assess job and employee satisfaction by role and department.
-- **Demographic Analysis**: Breaking down employee data by department, age, gender, and marital status.
+### DATA CLEANING AND PREPARATION
+---
+Data cleaning and preparation steps included:
+- Loaded the data into Excel and performed an initial inspection.
+- Checked for and removed duplicate entries.
+- Added calculated columns to represent monthly sales and product categories.
+- Conducted column profiling to ensure consistency in key fields like `Quantity` and `UnitPrice`.
 
-## Data Visualization
-### Dashboard Elements
-In Power BI, I designed an interactive dashboard with the following key elements:
-- **Attrition Overview**:
-  - Bar charts show attrition rates by department, age band, and gender, while a donut chart highlights attrition by gender.
-  - Line charts track changes in attrition over time.
-- **Satisfaction Analysis**:
-  - Heatmaps display satisfaction scores across departments and roles, while bar charts compare satisfaction scores among departments.
-- **Employee Demographics**:
-  - Pie charts show marital status distribution, and stacked bar charts represent educational backgrounds.
-- **Overtime Analysis**:
-  - Dual bar charts help see the link between overtime and attrition rates.
+### EXPLORATORY DATA ANALYSIS
+---
+This involved exploring the data to answer questions such as:
+- What are the best-selling products by quantity and revenue?
+- Which regions have the highest sales performance?
+- How do sales fluctuate across different months?
 
-### Interactive Features
-- **Slicers**: Allow filtering by Department, Age Band, Gender, Marital Status, and Job Role.
-- **Drill-Down Options**: Users can explore specific departments or job roles for a deeper look at attrition and satisfaction.
+### DATA ANALYSIS
+---
+Key SQL queries used for analysis included:
 
-## Key Insights
-After exploring the data, I uncovered several interesting findings:
-- **Attrition Trends**: Some departments and roles have notably higher turnover rates, which suggests these areas may need special attention.
-- **Satisfaction Insights**: Certain departments and job roles have lower satisfaction scores, hinting at potential engagement issues that could be contributing to attrition.
-- **Demographic Patterns**: Trends in attrition rates by age, marital status, and gender indicate that particular demographic groups may need targeted support.
-- **Overtime Impact**: There is a clear correlation between working overtime and higher attrition rates. This suggests that employees who frequently work extra hours might feel more burnt out, leading to a higher likelihood of leaving the company.
+```
 
-## Recommendations
-Based on the insights gained, here are my recommendations:
-- **Focus on Retention**: Prioritize retention strategies in departments and roles with the highest turnover to better support these teams.
-- **Address Satisfaction Gaps**: Identify and implement engagement initiatives in areas with lower satisfaction scores to boost morale and reduce turnover.
-- **Reevaluate Overtime Practices**: Given the link between overtime and attrition, consider adjusting workloads or providing more flexible scheduling options to reduce burnout.
-- **Monitor Demographic Trends**: Regularly review demographic-based attrition data to ensure HR policies are inclusive and supportive of all groups.
+SELECT * [dbo].[Sales_Performance_Analysis];
 
-## Conclusion
-This project provides a comprehensive look into employee attrition, satisfaction, and demographics. By using Excel for initial data prep and Power BI for dynamic visualizations, I’ve created a powerful tool for HR teams to understand and address employee turnover. These insights can help the organization make proactive, data-driven decisions to improve employee retention and engagement.
+----1----retrieve the total sales for each product category-----
+SELECT Product, SUM(UnitPrice * Quantity) AS TotalSales
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Product;
+
+----2--Find the number of sales transactions in each region----
+SELECT Region, COUNT(OrderID) AS Transactions
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Region;
+
+------3-----find the highest-selling product by total sales value ------
+SELECT Product, sum(Quantity) as highestsellingproduct
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Product
+ORDER BY highestsellingproduct DESC;
+
+------4----calculate total revenue per product------
+SELECT Product, sum(Quantity) as Total_revenue
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Product
+ORDER BY Total_revenue;
+
+
+------5----calculate monthly sales totals for the current year------
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, SUM(Quantity * UnitPrice) AS MonthlySales
+FROM [dbo].[Sales_Performance_Analysis]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY FORMAT(OrderDate, 'yyyy-MM');
+
+
+-----6-------find the top 5 customers by total purchase amount-----
+SELECT TOP 5 OrderID, SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY OrderID
+ORDER BY TotalPurchase DESC;
+
+
+
+-----7------calculate the percentage of total sales contributed by each region-----
+WITH TotalSales AS (
+    SELECT SUM(Quantity * UnitPrice) AS GrandTotal
+    FROM [dbo].[Sales_Performance_Analysis]
+)
+SELECT Region, SUM(Quantity * UnitPrice) * 100.0 / (SELECT GrandTotal FROM TotalSales) AS RegionSalesPercentage
+FROM [dbo].[Sales_Performance_Analysis]
+GROUP BY Region;
+
+
+
+-----8----------identify products with no sales in the last quarter.--------
+SELECT product, orderId
+FROM FROM [dbo].[Sales_Performance_Analysis]
+WHERE NOT EXISTS(Select 1
+FROM FROM [dbo].[Sales_Performance_Analysis]
+WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
+
+
+
