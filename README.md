@@ -14,7 +14,9 @@
 
 [DATA VISUALIZATION](#data-visualization)
 
-[RECOMMENDATION AND CONCLUSION](#recommendation)
+[KEY INSIGHTS](#keyinsights)
+
+[NEXT STEP](#nextstep)
 
 ## Project Overview
 This project aims to analyze the sales data of a retail store over a certain period of time to identify key insights that can inform business decisions. This will be achieved by analyzing the sales data to uncover key insights such as top-selling products, regional performances, and monthly sales trends. The final deliverable is an interactive Power BI dashboard that highlights these findings from the data.
