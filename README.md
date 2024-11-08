@@ -132,9 +132,9 @@ WHERE NOT EXISTS(Select 1
 FROM FROM [dbo].[Sales_Performance_Analysis]
 WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
----
-
+```
 ### DATA VISUALIZATION
+
 ---
 ![Screenshot](https://github.com/TogunOyinade/Sales_Performance_Analysis-/blob/main/Screenshot%202024-11-05%20103410.png)
 
