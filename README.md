@@ -156,7 +156,7 @@ WHERE OrderId= OrderId and Orderdate>= DateAdd(quarter,-1,GetDate()));
 
 - Investigate why the South region has significantly higher sales compared to other regions. Identify specific factors, such as marketing efforts, customer demographics, or local demand trends, that can be replicated in lower-performing regions.
 
--Since Shoes are the highest-selling product (29.19% of total sales), consider increasing marketing efforts, promotions, or bundling strategies around this product to further boost its sales across all regions.
+- Since Shoes are the highest-selling product (29.19% of total sales), consider increasing marketing efforts, promotions, or bundling strategies around this product to further boost its sales across all regions.
 
 - Given that February recorded the highest sales, it may be beneficial to replicate the strategies used during this month, such as targeted promotions, discounts, or special offers, to drive sales in other months.
 
